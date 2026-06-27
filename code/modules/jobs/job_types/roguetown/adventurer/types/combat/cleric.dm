@@ -743,11 +743,6 @@
 			head = /obj/item/clothing/head/roguetown/roguehood
 			H.mind?.AddSpell(new /datum/action/cooldown/spell/minion_order)
 			H.mind?.AddSpell(new /datum/action/cooldown/spell/gravemark)
-		if(/datum/patron/inhumen/matthios)
-			cloak = /obj/item/clothing/suit/roguetown/shirt/robe
-			head = /obj/item/clothing/head/roguetown/roguehood
-			H.adjust_skillrank(/datum/skill/craft/alchemy, SKILL_LEVEL_JOURNEYMAN, TRUE) //god of alchemy bestows upon ye, jman alchemy
-			ADD_TRAIT(H, TRAIT_ALCHEMY_EXPERT, TRAIT_GENERIC) //you get this so you can provide a modicum of plausible deniability about your malchemy stuff while doing a bit, but if it gets even a tiny bit of abuse it should be removed
 		else
 			cloak = /obj/item/clothing/suit/roguetown/shirt/robe //placeholder, anyone who doesn't have cool patron drip sprites just gets generic robes
 			head = /obj/item/clothing/head/roguetown/roguehood
